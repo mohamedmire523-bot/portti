@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | MOhamud Dahir</title>
+    <script>
+      try {
+        const t = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", t);
+        document.documentElement.setAttribute("data-bs-theme", t);
+      } catch (e) {}
+    </script>
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Google Fonts (Inter) -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- My styles -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- STICKY RESPONSIVE NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky-top py-3">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex align-items-center gap-2"
+          href="index.html"
+        >
+          <span class="bg-primary text-white px-3 py-1 rounded-3 fw-bold"
+            >MD</span
+          >
+          <span class="fs-4 fw-bold tracking-tight text-main"
+            >MOhamud Dahir</span
+          >
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-lg-3">
+          <button
+            class="theme-toggle"
+            id="themeToggleBtn"
+            aria-label="Toggle Theme"
+          >
+            <i class="fa-solid fa-moon" id="themeIcon"></i>
+          </button>
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa-solid fa-bars fs-4 text-main"></i>
+          </button>
+        </div>
+
+        <div
+          class="collapse navbar-collapse justify-content-center order-lg-2"
+          id="navbarNav"
+        >
+          <ul class="navbar-nav gap-1 mt-3 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html"
+                ><i class="fa-solid fa-house me-1"></i> Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="about.html"
+                ><i class="fa-solid fa-user me-1"></i> About Me</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html"
+                ><i class="fa-solid fa-photo-film me-1"></i> Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"
+                ><i class="fa-solid fa-envelope me-1"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main class="container my-4 my-md-5 flex-grow-1">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold mb-2">Who I Am &amp; What I Do</h2>
+        <p class="text-muted">
+          A look into my background, academic path, and technical capabilities.
+        </p>
+      </div>
+
+      <!-- Bio Summary -->
+      <div class="custom-card p-4 p-md-5 mb-5">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-8">
+            <h3 class="fw-bold mb-3">
+              <i class="fa-solid fa-user-gear text-primary me-2"></i> Biography
+              &amp; Profile Summary
+            </h3>
+            <p class="text-muted">
+              Hello! I am <strong>MOhamud Dahir</strong>, a senior Computer
+              Science student passionate about crafting sleek, usable, and
+              performant web technologies. My journey in tech started when I
+              built my first HTML website back in high school. Since then,
+              I&rsquo;ve expanded into software engineering principles, clean UI
+              execution, and full-stack software development.
+            </p>
+            <p class="text-muted mb-0">
+              My career goal is to join a forward-thinking technology team where
+              I can solve complex human-centered problems, collaborate on
+              impactful open-source projects, and continuously elevate my
+              technical expertise.
+            </p>
+          </div>
+          <div class="col-lg-4 text-center">
+            <div class="p-4 bg-body-tertiary rounded-4 border">
+              <i class="fa-solid fa-lightbulb text-warning display-4 mb-3"></i>
+              <h5 class="fw-bold">My Philosophy</h5>
+              <p class="small text-muted mb-0">
+                "Simplicity, accessibility, and high performance should be at
+                the heart of every software product."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Academic Background Table -->
+      <div class="mb-5">
+        <h3 class="fw-bold mb-4">
+          <i class="fa-solid fa-book-bookmark text-primary me-2"></i> Academic
+          Background
+        </h3>
+        <div class="custom-card p-3 p-md-4 table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead>
+              <tr class="table-light">
+                <th>Degree / Level</th>
+                <th>Institution</th>
+                <th>Duration</th>
+                <th>Key Coursework / Focus</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="fw-semibold">B.S. in Computer Science</span>
+                </td>
+                <td>State University of Technology</td>
+                <td>2023 - Present</td>
+                <td>
+                  Data Structures, Web Architecture, OOP, Operating Systems
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="fw-semibold">Diploma in Front-End Web Dev</span>
+                </td>
+                <td>Tech Academy Online</td>
+                <td>2022 - 2023</td>
+                <td>HTML5, CSS3, Bootstrap 5, JavaScript, Git &amp; GitHub</td>
+              </tr>
+              <tr>
+                <td><span class="fw-semibold">High School Diploma</span></td>
+                <td>Oakridge High School</td>
+                <td>2018 - 2022</td>
+                <td>
+                  AP Computer Science A, Advanced Mathematics, Robotics Club
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Skills & Competencies -->
+      <div class="row g-4 mb-5">
+        <div class="col-lg-6">
+          <div class="custom-card p-4 h-100">
+            <h3 class="fw-bold fs-5 mb-4">
+              <i class="fa-solid fa-code text-primary me-2"></i> Technical
+              Skills
+            </h3>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">HTML5 &amp; Semantic Markup</span
+                ><span class="text-muted">95%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="HTML5 &amp; Semantic Markup"
+                aria-valuenow="95"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">CSS3 &amp; Bootstrap 5</span
+                ><span class="text-muted">90%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="CSS3 &amp; Bootstrap 5"
+                aria-valuenow="90"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">JavaScript (ES6+)</span
+                ><span class="text-muted">82%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="JavaScript (ES6+)"
+                aria-valuenow="82"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 82%"></div>
+              </div>
+            </div>
+            <div class="mb-0">
+              <div class="d-flex justify-content-between mb-1">
+                <span class="fw-medium">Git &amp; GitHub Version Control</span
+                ><span class="text-muted">88%</span>
+              </div>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Git &amp; GitHub Version Control"
+                aria-valuenow="88"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div class="progress-bar" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="custom-card p-4 h-100">
+            <h3 class="fw-bold fs-5 mb-4">
+              <i class="fa-solid fa-heart text-danger me-2"></i> Personal
+              Interests &amp; Soft Skills
+            </h3>
+
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="badge bg-primary-subtle text-primary p-2 fs-6"
+                ><i class="fa-solid fa-comments me-1"></i> Team
+                Collaboration</span
+              >
+              <span class="badge bg-success-subtle text-success p-2 fs-6"
+                ><i class="fa-solid fa-puzzle-piece me-1"></i> Problem
+                Solving</span
+              >
+              <span class="badge bg-warning-subtle text-warning p-2 fs-6"
+                ><i class="fa-solid fa-clock me-1"></i> Time Management</span
+              >
+              <span class="badge bg-info-subtle text-info p-2 fs-6"
+                ><i class="fa-solid fa-brain me-1"></i> Continuous
+                Learning</span
+              >
+            </div>
+
+            <h5 class="fw-bold fs-6 mb-2">Hobbies &amp; Personal Passions</h5>
+            <ul class="text-muted list-unstyled">
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                <strong>Open Source Contributing:</strong> Helping maintain
+                community developer docs.
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                <strong>Tech Blogging:</strong> Writing quick tips on CSS grid
+                and modern web tricks.
+              </li>
+              <li class="mb-2">
+                <i class="fa-solid fa-circle-check text-success me-2"></i>
+                <strong>Digital Photography:</strong> Capturing urban
+                architecture and nature landscapes.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row align-items-center gy-3">
+          <div class="col-md-6 text-center text-md-start">
+            <p class="mb-0 text-muted small">
+              &copy; 2026 Mohamud Dahir. Built with HTML5, CSS3, &amp; Bootstrap
+              5. Hosted on GitHub Pages.
+            </p>
+          </div>
+          <div class="col-md-6 text-center text-md-end">
+            <div class="d-inline-flex gap-3">
+              <a
+                href="index.html"
+                class="text-muted text-decoration-none small style-hover"
+                >Home</a
+              >
+              <a
+                href="about.html"
+                class="text-muted text-decoration-none small style-hover"
+                >About</a
+              >
+              <a
+                href="gallery.html"
+                class="text-muted text-decoration-none small style-hover"
+                >Gallery</a
+              >
+              <a
+                href="contact.html"
+                class="text-muted text-decoration-none small style-hover"
+                >Contact</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- My JavaScript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
